@@ -1,0 +1,92 @@
+.heading{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:gold;
+    padding: 20px;
+    text-align: center;
+    background-size: contain;
+    position: relative;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.score{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 70px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+
+}
+.won{
+    display: flex;
+    justify-content: space-evenly;
+}
+.lost{
+    display: flex;
+    display: flex;justify-content: space-evenly;
+}
+
+.buttons button{
+    background-color: transparent;
+    /* border-color: transparent; */
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 70px;
+}
+.rock{
+    background-color: grey;
+    border-radius: 150px;
+    border-color: black;
+    border-width: 10px;
+    animation: spin 10s linear infinite;
+    animation-play-state: paused; 
+}
+.rock:hover{
+    animation-play-state: running;
+}
+
+.paper{
+    background-color: white;
+    border-radius: 150px;
+    border-color: black;
+    border-width: 10px;
+    animation: spin 10s linear infinite;
+    animation-play-state: paused;
+}
+.paper:hover{
+    animation-play-state: running;
+}
+.scissors{
+    background-color:pink;
+    border-radius: 150px;
+    border-color: black;
+    border-width: 10px;
+    animation: spin 10s linear infinite;
+    animation-play-state: paused;
+}
+.scissors:hover{
+    animation-play-state: running;
+}
+@keyframes spin {
+    100% {transform: rotate(1turn); }
+}
+body{
+    background-color: lightblue;
+}
